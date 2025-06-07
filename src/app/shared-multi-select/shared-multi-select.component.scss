@@ -73,24 +73,24 @@ mat-form-field {
   text-overflow: ellipsis; /* Add ellipsis if text is too long */
 }
 
-/* Override Material's default panel padding if needed */
-::ng-deep .mat-select-panel {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
+// /* Override Material's default panel padding if needed */
+// ::ng-deep .mat-select-panel {
+//   padding-top: 0 !important;
+//   padding-bottom: 0 !important;
+// }
 
-/* Ensure mat-option has consistent padding */
-::ng-deep .mat-option {
-  padding: 0 16px !important;
-  min-height: 48px;
-}
+// /* Ensure mat-option has consistent padding */
+// ::ng-deep .mat-option {
+//   padding: 0 16px !important;
+//   min-height: 48px;
+// }
 
-/* If you find the checkbox for All is not aligned, try this: */
-::ng-deep .mat-pseudo-checkbox {
-  margin-right: 8px;
-}
+// /* If you find the checkbox for All is not aligned, try this: */
+// ::ng-deep .mat-pseudo-checkbox {
+//   margin-right: 8px;
+// }
 
-/* Adjust the input field's height to align with Material's input aesthetic */
-::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
-  padding: 0 12px 0 0;
-}
+// /* Adjust the input field's height to align with Material's input aesthetic */
+// ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+//   padding: 0 12px 0 0;
+// }
