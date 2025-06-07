@@ -1,7 +1,8 @@
+/* src/app/shared-multi-select/shared-multi-select.component.css */
+
 /* Container for the whole mat-form-field */
 mat-form-field {
-  width: 300px; /* Adjust width as needed for your design */
-  margin: 20px;
+  width: 300px;
 }
 
 /* Styling for the search box container */
@@ -15,7 +16,7 @@ mat-form-field {
 
   display: flex;
   align-items: center;
-  gap: 8px; /* Space between input and icon */
+  gap: 8px;
 }
 
 /* Style the actual input field within the search box */
@@ -27,36 +28,49 @@ mat-form-field {
   font-size: 16px;
   outline: none;
   box-sizing: border-box;
-  height: 48px; /* Consistent height */
-  line-height: 48px; /* For vertical text centering */
+  height: 48px;
+  line-height: 48px;
 }
 
 .search-box input:focus {
   border-bottom-color: #3f51b5;
 }
 
-/* --- NEW: Styling for the clear search icon container (the span) --- */
+/* Styling for the clear search icon container (the span) */
 .clear-search-icon {
-  cursor: pointer; /* Indicate it's clickable */
-  color: rgba(0, 0, 0, 0.54); /* Standard Material icon color */
-  padding: 8px; /* Give it a decent clickable area */
-  border-radius: 50%; /* Make it round for hover effect */
-  display: flex; /* For centering the icon inside */
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.2s ease-in-out; /* Smooth transition for hover */
+  transition: background-color 0.2s ease-in-out;
 }
 
 .clear-search-icon:hover {
-  background-color: rgba(0, 0, 0, 0.04); /* Subtle hover effect */
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 /* Specific styling for the mat-icon itself */
 .clear-search-icon mat-icon {
-  font-size: 24px; /* Standard icon size */
+  font-size: 24px;
   width: 24px;
   height: 24px;
   line-height: 24px;
+}
+
+/* --- NEW: Styling for the "No matching products" message div --- */
+.no-match-message {
+  padding: 0 16px; /* Match mat-option padding */
+  min-height: 48px; /* Match mat-option height */
+  line-height: 48px; /* Vertically center text */
+  color: rgba(0, 0, 0, 0.38); /* Greyed out text like disabled options */
+  font-size: 16px; /* Match default option font size */
+  pointer-events: none; /* Prevent any pointer events (e.g., hover, click) */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflow if text is too long */
+  text-overflow: ellipsis; /* Add ellipsis if text is too long */
 }
 
 /* Override Material's default panel padding if needed */
@@ -68,12 +82,12 @@ mat-form-field {
 /* Ensure mat-option has consistent padding */
 ::ng-deep .mat-option {
   padding: 0 16px !important;
-  min-height: 48px; /* Standard Material list item height */
+  min-height: 48px;
 }
 
 /* If you find the checkbox for All is not aligned, try this: */
 ::ng-deep .mat-pseudo-checkbox {
-  margin-right: 8px; /* Add some spacing if checkbox is too close to text */
+  margin-right: 8px;
 }
 
 /* Adjust the input field's height to align with Material's input aesthetic */
