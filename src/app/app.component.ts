@@ -8,7 +8,7 @@ interface Product {
 }
 
 interface Vendor {
-  dentalVendorId: string;
+  vendorId: string;
   vendorName: string;
 }
 
@@ -38,10 +38,10 @@ export class AppComponent implements OnInit, OnDestroy {
   selectedProducts: (string | number)[] = [];
 
   vendors: Vendor[] = [
-    { dentalVendorId: '1', vendorName: 'Vendor A' },
-    { dentalVendorId: '2', vendorName: 'Vendor B' },
-    { dentalVendorId: '3', vendorName: 'Vendor C' },
-    { dentalVendorId: '4', vendorName: 'Vendor D' },
+    { vendorId: '1', vendorName: 'Vendor A' },
+    { vendorId: '2', vendorName: 'Vendor B' },
+    { vendorId: '3', vendorName: 'Vendor C' },
+    { vendorId: '4', vendorName: 'Vendor D' },
   ];
   selectedVendors: (string | number)[] = [];
 
